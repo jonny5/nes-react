@@ -13,7 +13,6 @@ import Icon from "./components/Icon";
 import Sprite from "./components/Sprite";
 import ControllerIcon from "./components/ControllerIcon";
 
-import "../nes.css/scss/nes.scss";
 import "./scss/custom.scss";
 
 export {
