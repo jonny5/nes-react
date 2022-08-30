@@ -10,7 +10,7 @@ export interface ContainerProps {
   className?: boolean;
 }
 
-const Container: React.SFC<ContainerProps> = ({ children, className, dark, rounded, centered, title, ...other }) => (
+const Container: React.FunctionComponent<ContainerProps> = ({ children, className, dark, rounded, centered, title, ...other }) => (
   <section
     className={classNames(className, "nes-container", {
       "with-title": title,

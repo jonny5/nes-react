@@ -9,7 +9,7 @@ export interface CheckboxProps {
 }
 
 
-const Checkbox: React.SFC<CheckboxProps> = ({ label, onSelect, checked, className, ...other }) => (
+const Checkbox: React.FunctionComponent<CheckboxProps> = ({ label, onSelect, checked, className, ...other }) => (
   <div>
     <label className="nes-checkbox-parent">
       <input

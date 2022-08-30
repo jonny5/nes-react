@@ -13,7 +13,7 @@ export interface TextAreaProps {
   className?: string;
 }
 
-const TextArea: React.SFC<TextAreaProps> = ({ label, value, onChange, success, warning, error, placeholder, labelInline, ...other }) => (
+const TextArea: React.FunctionComponent<TextAreaProps> = ({ label, value, onChange, success, warning, error, placeholder, labelInline, ...other }) => (
   <div className={classNames("nes-field", { "is-inline": labelInline })} >
     {label && <label>{label}</label>}
     <textarea

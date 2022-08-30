@@ -5,9 +5,10 @@ export interface BalloonProps {
   fromLeft?: boolean;
   fromRight?: boolean;
   className?: string;
+  children?: React.ReactNode;
 }
 
-const Balloon: React.SFC<BalloonProps> = ({ fromLeft, fromRight, children, className, ...other }) => (
+const Balloon: React.FunctionComponent<BalloonProps> = ({ fromLeft, fromRight, children, className, ...other }) => (
   <div
     className={classNames(className, "nes-balloon", {
       "from-left": fromLeft,

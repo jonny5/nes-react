@@ -8,7 +8,7 @@ export interface RadiosProps {
   className?: string;
 }
 
-const Radios: React.SFC<RadiosProps> = ({ className, options, selectedValue, onValueChange, ...other }) => (
+const Radios: React.FunctionComponent<RadiosProps> = ({ className, options, selectedValue, onValueChange, ...other }) => (
   <div>
     {options.map((option, index) => (
       <label

@@ -17,7 +17,7 @@ export interface SpriteProps {
   className?: string;
 }
 
-const Sprite: React.SFC<SpriteProps> = ({ sprite, className, ...other }) => (
+const Sprite: React.FunctionComponent<SpriteProps> = ({ sprite, className, ...other }) => (
   <i className={classNames(className, `nes-${sprite}`)} {...other} />
 );
 

@@ -10,7 +10,7 @@ export interface AvatarProps {
   className?: string;
 }
 
-const Avatar: React.SFC<AvatarProps> = ({ src, small, medium, large, rounded, className, ...other }) => (
+const Avatar: React.FunctionComponent<AvatarProps> = ({ src, small, medium, large, rounded, className, ...other }) => (
   <img
     src={src}
     className={classNames(className, "nes-avatar", {

@@ -13,7 +13,7 @@ export interface ProgressProps {
   className?: string
 }
 
-const Progress: React.SFC<ProgressProps> = ({ className, value, max, primary, success, warning, error, pattern, ...other }) => (
+const Progress: React.FunctionComponent<ProgressProps> = ({ className, value, max, primary, success, warning, error, pattern, ...other }) => (
   <progress
     value={value}
     max={max}

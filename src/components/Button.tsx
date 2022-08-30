@@ -11,7 +11,7 @@ export interface ButtonProps {
   className?: string;
 }
 
-const Button: React.SFC<ButtonProps> = ({ children, className, primary, success, warning, error, disabled, ...other }) => (
+const Button: React.FunctionComponent<ButtonProps> = ({ children, className, primary, success, warning, error, disabled, ...other }) => (
   <button
     className={classNames(className, "nes-btn", {
       "is-primary": primary,

@@ -28,7 +28,7 @@ export interface IconProps {
   className?: string;
 }
 
-const Icon: React.SFC<IconProps> = ({ className, icon, small, medium, large, empty, transparent, half, ...other }) => (
+const Icon: React.FunctionComponent<IconProps> = ({ className, icon, small, medium, large, empty, transparent, half, ...other }) => (
   <i
     className={classNames(className, "nes-icon", icon, {
       "is-small": small,

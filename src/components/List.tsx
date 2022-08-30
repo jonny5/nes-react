@@ -7,7 +7,7 @@ export interface ListProps {
   children?: React.ReactNode;
 }
 
-const List: React.SFC<ListProps> = ({ children, solid, className, ...other }) => (
+const List: React.FunctionComponent<ListProps> = ({ children, solid, className, ...other }) => (
   <ul
     className={classNames(className, "nes-list", {
       "is-circle": !solid,

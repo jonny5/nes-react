@@ -6,7 +6,7 @@ export interface ControllerIconProps {
   className?: string;
 }
 
-const ControllerIcon: React.SFC<ControllerIconProps> = ({ controller, className, ...other }) => (
+const ControllerIcon: React.FunctionComponent<ControllerIconProps> = ({ controller, className, ...other }) => (
   <i className={classNames(className,`${controller}-logo`)} {...other}/>
 );
 
